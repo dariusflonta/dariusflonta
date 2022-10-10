@@ -29,10 +29,23 @@ window.addEventListener('scroll',()=> {
     }
 });
 header.addEventListener('scroll',()=> {
-    if(hero.getBoundingClientRect().top > window.innerHeight + 150){
+    if(hero.getBoundingClientRect().top > window.innerHeight + 50){
         header.style.background = "transparent";
     }
 })
+
+function fadeIntroTitle(){
+    let introTitle = document.querySelector('.intro-title');
+    introTitle.style.transform = 'translateX(0)';
+    introTitle.style.opacity = '1';
+};
+function fadeIntroText(){
+    let introText = document.querySelector('.intro-text');
+    introText.style.transform = 'translateX(0)';
+    introText.style.opacity = '1';
+}
+setTimeout(fadeIntroTitle,1700);
+setTimeout(fadeIntroText,2700);
 
 let titles = document.querySelectorAll('.scroll-reveal-bottom');
 let leftCols = document.querySelectorAll('.scroll-reveal-left');
