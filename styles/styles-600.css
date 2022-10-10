@@ -3,6 +3,12 @@
         font-size:1.2rem;
         margin:1rem;
     }
+    #hero {
+        background-position-x: 90%;
+    }
+    .intro-box {
+        width:85%;
+    }
     .intro-title {
         font-size:2rem;
     }
@@ -15,6 +21,9 @@
     .about-title, .projects-title, .contact-title {
         font-size:1.8rem;
         white-space: nowrap;
+    }
+    #projects {
+        padding-top:3.2rem;
     }
     #contact-form {
         width:100%;
@@ -48,5 +57,8 @@
     }
     .footer-links {
         font-size:0.8rem;
+    }
+    .footer-details {
+        font-size:0.7rem;
     }
 }

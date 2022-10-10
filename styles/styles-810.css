@@ -4,20 +4,20 @@
         justify-content: end;
     }
     #navbar {
-        height:40vh;
-        width:40%;
+        height:100vh;
+        width:100%;
         position:fixed;
         top:10%;
         right:0;
-        background-image:linear-gradient(rgb(7,7,7),rgb(50,50,50));
-        box-shadow:0 0 10px #000;
+        padding-top:10px;
+        background-color:#111;
         display:flex;
         justify-content:start;
         align-items:center;
         flex-direction:column;
-        padding-top:2rem;
-        transform:translateX(500px);
+        transform:translateX(800px);
         transition:.25s ease-in;
+        z-index:5;
     }
     #navbar.activeNav {
         transform:translateX(0);
@@ -29,7 +29,14 @@
         cursor:pointer;
         margin-right:1.5rem;
     }
+    #hero {
+        background-position-x: 100%;
+    }
+    .intro-text {
+        width:80%;
+    }
     .intro-title {
+        white-space:nowrap;
         font-size:2.4rem;
     }
     .intro-text {
@@ -42,6 +49,25 @@
     }
     .col-about p, .projects-text {
         font-size:1rem;
+    }
+    #projects {
+        padding-top:3.6rem;
+    }
+    .col-projects {
+        flex-basis:45%;
+        padding:1rem;
+        margin:1rem;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:space-between;
+    }
+    .col-projects img {
+        margin-bottom:.75rem;
+        box-shadow:0px 2px 10px #222;
+        border-radius:10px;
+        width:100%;
+        height:100%;
     }
     .footer-links {
         display:flex;
@@ -59,5 +85,38 @@
     }
     .contact-form {
         width:100%;
+    }
+    .scroll-reveal-bottom {
+        position:relative;
+        transform:translateY(150px);
+        opacity:0;
+    }
+    .active-reveal-bottom {
+        transform:translateY(0);
+        opacity:1;
+        transition:.8s ease-out;
+    }
+    .scroll-reveal-left {
+        position:relative;
+        transform:translateX(-50px);
+        opacity:0;
+    }
+    .active-reveal-left {
+        transform:translateX(0);
+        opacity:1;
+        transition:1s ease-in-out;
+    }
+    .scroll-reveal-right {
+        position:relative;
+        transform:translateX(50px);
+        opacity:0;
+    }
+    .active-reveal-right {
+        transform:translateX(0);
+        opacity:1;
+        transition:1s ease-in-out;
+    }
+    .footer-details {
+        font-size:0.8rem;
     }
 }
