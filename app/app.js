@@ -44,8 +44,8 @@ function fadeIntroText(){
     introText.style.transform = 'translateX(0)';
     introText.style.opacity = '1';
 }
-setTimeout(fadeIntroTitle,1700);
-setTimeout(fadeIntroText,2700);
+setTimeout(fadeIntroTitle,1500);
+setTimeout(fadeIntroText,2500);
 
 let titles = document.querySelectorAll('.scroll-reveal-bottom');
 let leftCols = document.querySelectorAll('.scroll-reveal-left');
