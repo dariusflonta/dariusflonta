@@ -1,0 +1,10 @@
+@media screen and (max-width:1000px) {
+    .row {
+        padding:1.6rem;
+    }
+    .col-about, .col-projects {
+        margin:1rem;
+        padding:1rem;
+        padding-top:0.3rem;
+    }
+}
