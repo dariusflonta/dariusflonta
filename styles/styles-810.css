@@ -4,18 +4,19 @@
         justify-content: end;
     }
     #navbar {
-        height:100vh;
-        width:100%;
+        height:40vh;
+        width:40%;
         position:fixed;
         top:10%;
-        left:0;
-        background-color: #555;
+        right:0;
+        background-image:linear-gradient(rgb(7,7,7),rgb(50,50,50));
+        box-shadow:0 0 10px #000;
         display:flex;
         justify-content:start;
         align-items:center;
         flex-direction:column;
         padding-top:2rem;
-        transform:translateX(800px);
+        transform:translateX(500px);
         transition:.25s ease-in;
     }
     #navbar.activeNav {

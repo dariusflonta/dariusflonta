@@ -21,7 +21,7 @@ header {
     z-index:10;
 }
 .active-header {
-    background-color:radial-gradient(rgb(50,50,50),rgb(7,7,7));
+    background-image:radial-gradient(rgb(50,50,50),rgb(7,7,7));
     transition:.2s;
 }
 #nav {

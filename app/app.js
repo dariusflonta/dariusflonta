@@ -3,6 +3,16 @@ const nav = document.getElementById('navbar');
 
 menuBtn.addEventListener('click', () => {
     nav.classList.toggle('activeNav');
+    let navLink = document.querySelectorAll('.navlink');
+    navLink.onclick = navClose();
+
+    function navClose(){
+        for( let i = 0; i < navLink.length; i ++){
+            navLink[i].addEventListener('click',()=>{
+                nav.classList.remove('activeNav');
+            })
+        }
+    }
 })
 
 const header = document.getElementById('header');
