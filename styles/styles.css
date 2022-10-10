@@ -252,6 +252,19 @@ footer {
     background-color:#111;
     padding:3rem 1rem .5rem;
 }
+.footer-intro {
+    width:80%;
+    margin:.5rem auto 1.5rem;
+    text-align:center;
+}
+.footer-intro h5 {
+    font-size:2rem;
+}
+.footer-intro i {
+    margin:1rem 2rem 1rem 2rem;
+    font-size:3.5rem;
+    color:#f9f9f9;
+}
 .footer-links {
     padding-bottom:1rem;
     width:80%;
