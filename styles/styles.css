@@ -112,6 +112,7 @@ body {
 .about-title {
     font-size:2rem;
     margin-bottom:1.5rem;
+    text-align:center;
 }
 .about-text {
     font-size:1.2rem;
@@ -180,7 +181,7 @@ body {
 /* contact form */
 
 #contact {
-    padding-top:5rem;
+    padding-top:4rem;
     padding-bottom:1.5rem;
     background-color:rgba(25,25,25,0.7);
 }
