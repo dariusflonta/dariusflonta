@@ -2,7 +2,6 @@ const load = document.getElementById('loader');
 const body = document.querySelector('body');
 window.addEventListener('load', ()=> {
     load.style.display = "none";
-    body.style.transition = ".2s";
 })
 
 const menuBtn = document.getElementById('menu');
@@ -51,8 +50,8 @@ function fadeIntroText(){
     introText.style.transform = 'translateX(0)';
     introText.style.opacity = '1';
 }
-setTimeout(fadeIntroTitle,1400);
-setTimeout(fadeIntroText,2400);
+setTimeout(fadeIntroTitle,1800);
+setTimeout(fadeIntroText,2800);
 
 let titles = document.querySelectorAll('.scroll-reveal-bottom');
 let leftCols = document.querySelectorAll('.scroll-reveal-left');

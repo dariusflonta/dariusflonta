@@ -90,9 +90,9 @@ body {
 }
 .intro-title {
     font-size:2.8rem;
-    transform:translateX(-100px);
+    transform:translateX(-150px);
     opacity:0;
-    transition:.7s ease-in-out;
+    transition:1s ease-in-out;
 }
 .intro-text {
     font-size:2rem;
