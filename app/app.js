@@ -1,3 +1,10 @@
+const load = document.getElementById('loader');
+const body = document.querySelector('body');
+window.addEventListener('load', ()=> {
+    load.style.display = "none";
+    body.style.transition = ".2s";
+})
+
 const menuBtn = document.getElementById('menu');
 const nav = document.getElementById('navbar');
 
