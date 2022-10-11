@@ -16,12 +16,12 @@
         align-items:center;
         flex-direction:column;
         transform:translateX(800px);
-        transition:.25s ease-in;
+        transition:.25s ease-in-out;
         z-index:5;
     }
     #navbar.activeNav {
         transform:translateX(0);
-        transition:.3 ease-out;
+        transition:.3 ease-in-out;
     }
     #menu {
         display:block;
