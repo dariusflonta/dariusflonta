@@ -50,8 +50,8 @@ function fadeIntroText(){
     introText.style.transform = 'translateX(0)';
     introText.style.opacity = '1';
 }
-setTimeout(fadeIntroTitle,1800);
-setTimeout(fadeIntroText,2800);
+setTimeout(fadeIntroTitle,1000);
+setTimeout(fadeIntroText,2000);
 
 let titles = document.querySelectorAll('.scroll-reveal-bottom');
 let leftCols = document.querySelectorAll('.scroll-reveal-left');
@@ -64,9 +64,6 @@ window.addEventListener('scroll', () => {
         if(revealHeight < windowHeight - revealPoint){
             titles[i].classList.add('active-reveal-bottom');
         }
-        else {
-            titles[i].classList.remove('active-reveal-bottom');
-        }
     };
 })
 window.addEventListener('scroll', ()=>{
@@ -77,9 +74,6 @@ window.addEventListener('scroll', ()=>{
         if(revealHeight < windowHeight - revealPoint){
             leftCols[i].classList.add('active-reveal-left');
         }
-        else {
-            leftCols[i].classList.remove('active-reveal-left');
-        }
     };
 })
 window.addEventListener('scroll', ()=>{
@@ -89,9 +83,6 @@ window.addEventListener('scroll', ()=>{
         let revealPoint = 1;
         if(revealHeight < windowHeight - revealPoint){
             rightCols[i].classList.add('active-reveal-right');
-        }
-        else {
-            rightCols[i].classList.remove('active-reveal-right');
         }
     };
 })
