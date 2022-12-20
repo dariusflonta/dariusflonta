@@ -81,23 +81,45 @@
             </div>
         </div>
     </section>
-    
+
+    <?php
+        if(!empty($_POST["send"])){
+            $userName = $_POST["userName"];
+            $userEmail = $_POST["userEmail"];
+            $userTitle = $_POST["userTitle"];
+            $userMessage = $_POST["userMessage"];
+            $toEmail = $_POST["darius.flonta97@yahoo.com"];
+            $mailHeader = "Name: " . $userName .
+            "\r\n Email: " . $userEmail .
+            "\r\n Subject: " . $userTitle . 
+            "\r\n Message: " . $userMessage . "\r\n";
+
+            if(mail($toEmail, $userName, $mailHeader)){
+                $sentMessage = "Your message has been send succesfully!";
+            }
+        }
+    ?>
     <section id="contact">
         <div class="contact-form scroll-reveal-bottom">
             <h2 class="contact-title">Don't hesitate to contact me</h2>
             <form action="index.php" method="POST" id="contactForm" >
                 <label for="name">
-                    <input type="text" id="name" placeholder="Your Name Here" required>
+                    <input type="text" id="name" name="userName" placeholder="Your Name Here" required>
                 </label>
                 <label for="email">
-                    <input type="email" id="email" placeholder="Your Email Here" required>
+                    <input type="email" id="email" name="userEmail" placeholder="Your Email Here" required>
                 </label>
                 <label for="title">
-                    <input type="text" id="title" placeholder="Cc/Subject" required>
+                    <input type="text" id="title" name="userTitle" placeholder="Cc/Subject" required>
                 </label>
-                <textarea name="" id="message" cols="10" rows="10" placeholder="Your message here"></textarea>
-                <input type="submit" value="Send" required>
-
+                <textarea name="" id="message" cols="10" rows="10"  name="userMessage"  placeholder="Your message here"></textarea>
+                <input type="submit" name="send" value="Send" required>
+                <?php 
+                    if(!empty($sentMessage)){ ?>
+                        <div class="successful">
+                            <p><strong> <?php echo $sentMessage ?> </strong></p>
+                        </div>
+                    <?php } ?>
             </form>
         </div>
     </section>
